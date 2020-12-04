@@ -8,6 +8,10 @@ import { useAuth } from '../hooks/auth';
 const Routes: React.FC = () => {
   const { user, loading } = useAuth();
 
+  useEffect(() => {
+
+    console.log({ user })
+  }, [user])
   if (loading) {
     return (
       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
@@ -16,7 +20,7 @@ const Routes: React.FC = () => {
     );
   }
 
-  return user ? <AuthRoutes /> : <AppRoutes />;
+  return user ? <AppRoutes /> : <AuthRoutes />;
 };
 
 export default Routes;
