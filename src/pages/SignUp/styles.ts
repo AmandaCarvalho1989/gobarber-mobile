@@ -1,10 +1,11 @@
 import styled from 'styled-components/native';
-import {Platform} from 'react-native';
+import { Platform } from 'react-native';
 
 export const Container = styled.View`
   flex: 1;
   /* align-items: center; */
   justify-content: center;
+  margin-top:32px;
   padding: 0 30px ${Platform.OS === 'android' ? 158 : 40}px;
 `;
 export const Title = styled.Text`
@@ -12,6 +13,7 @@ export const Title = styled.Text`
   color: #f4ede8;
   /* font-family: 'RobotoSlab-Medium'; */
   margin: 64px 0 24px;
+  align-self: center;
 `;
 
 export const BackToSign = styled.TouchableOpacity`

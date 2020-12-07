@@ -1,4 +1,4 @@
-import React, {useRef, useCallback} from 'react';
+import React, { useRef, useCallback } from 'react';
 import {
   Image,
   KeyboardAvoidingView,
@@ -9,17 +9,17 @@ import {
   Alert,
 } from 'react-native';
 import Icon from 'react-native-vector-icons/Feather';
-import {useNavigation} from '@react-navigation/native';
+import { useNavigation } from '@react-navigation/native';
 
-import {Form} from '@unform/mobile';
-import {FormHandles} from '@unform/core';
+import { Form } from '@unform/mobile';
+import { FormHandles } from '@unform/core';
 import * as Yup from 'yup';
 
 import logoImg from '../../assets/logo.png';
 import Input from '../../components/Input';
 import Button from '../../components/Button';
 
-import {Container, Title, BackToSign, BackToSignText} from './styles';
+import { Container, Title, BackToSign, BackToSignText } from './styles';
 import getValidationErrors from '../../utils/getValidationErrors';
 import api from '../../services/api';
 
@@ -83,14 +83,14 @@ const SignUp: React.FC = () => {
   return (
     <>
       <KeyboardAvoidingView
-        style={{flex: 1}}
+        style={{ flex: 1 }}
         enabled
         behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
         <ScrollView
           keyboardShouldPersistTaps="handled"
-          contentContainerStyle={{flex: 1}}>
+          contentContainerStyle={{ flex: 1 }}>
           <Container>
-            <Image source={logoImg} />
+            <Image source={logoImg} style={{ marginHorizontal: 24 }} />
             <View>
               <Title>Crie sua conta</Title>
             </View>
