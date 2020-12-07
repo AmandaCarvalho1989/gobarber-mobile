@@ -15,13 +15,13 @@ justify-content: space-between;
 align-items: center;
 
 `
-export const HeaderTitle = styled.View`
+export const HeaderTitle = styled.Text`
 color: #f4ede8;
 font-size: 20px;
 /* font-family: 'RobotoSlab-Regular' */
 line-height: 28px;
 `
-export const UserName = styled.View`
+export const UserName = styled.Text`
 color: #ff9000;
 /* font-family: 'RobotoSlab-Medium' */
 `
